@@ -8,20 +8,20 @@ $ORIGIN example.com.
                            86400 )    ; Minimum
           IN NS        localhost.
 
-gw           IN A         10.0.1.1
-puppet       IN A         10.0.1.5
-build        IN A         10.0.1.10
-phpmyadmin   IN A         10.0.1.11
+gw           IN A         192.168.42.2
+puppet       IN A         192.168.42.5
+build        IN A         192.168.42.10
+phpmyadmin   IN A         192.168.42.11
 
-mysql        IN A         10.0.1.40
+mysql        IN A         192.168.42.40
 
 ; 100-150 DHCP public range
 ; 200-210 DHCP reservations
 
-kickstart    IN A         10.0.1.250
-tftp         IN A         10.0.1.251
-yumrepo      IN A         10.0.1.252
-dns          IN A         10.0.1.253
-dhcp         IN A         10.0.1.254
+kickstart    IN A         192.168.42.250
+tftp         IN A         192.168.42.251
+yumrepo      IN A         192.168.42.252
+dns          IN A         192.168.42.253
+dhcp         IN A         192.168.42.254
 
 yum          IN CNAME     yumrepo
